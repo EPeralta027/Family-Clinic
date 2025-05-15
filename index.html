@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Family First Clinic - NYC Care</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navigation Menu -->
+  <nav>
+    <div class="container nav-container">
+      <h1 class="logo">FamilyCareClinicsNY.com</h1>
+      <ul class="nav-links">
+        <li><a href="#services"><i class="fas fa-stethoscope"></i> Services</a></li>
+        <li><a href="#locations"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
+        <li><a href="#book" class="nav-button"><i class="fas fa-calendar-check"></i> Book Visit</a></li>
+        <li><a href="#contact"><i class="fas fa-phone-alt"></i> Contact</a></li>
+        <li><a href="#billing"><i class="fas fa-file-invoice-dollar"></i> Billing</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div class="hero-overlay">
+      <div class="container hero-text">
+        <h2>Compassionate Care for NYC Families</h2>
+        <p>👨‍⚕️ Trusted physicians serving all 5 boroughs since 2015</p>
+        <button class="cta-button pulse" onclick="document.getElementById('book').scrollIntoView({ behavior: 'smooth' })">
+          <i class="fas fa-calendar-alt"></i> Schedule Today
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Location Tabs -->
+  <section id="locations" class="borough-selector">
+    <div class="container">
+      <h2><i class="fas fa-map-pin"></i> Find Your Nearest Location</h2>
+      <div class="borough-tabs">
+        <button class="borough-btn active" data-borough="manhattan">Manhattan</button>
+        <button class="borough-btn" data-borough="brooklyn">Brooklyn</button>
+        <button class="borough-btn" data-borough="queens">Queens</button>
+        <button class="borough-btn" data-borough="bronx">Bronx</button>
+        <button class="borough-btn" data-borough="staten-island">Staten Island</button>
+      </div>
+
+      <div class="borough-info active" id="manhattan">
+        <h3>Midtown Manhattan</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Wellness Ave, NY 10001</p>
+        <p><i class="fas fa-phone"></i> (212) 555-1001</p>
+        <p><i class="fas fa-clock"></i> Mon-Fri: 8am-7pm | Sat: 9am-3pm</p>
+      </div>
+      <div class="borough-info" id="brooklyn">
+        <h3>Brooklyn Heights</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 456 Care Blvd, Brooklyn, NY 11201</p>
+        <p><i class="fas fa-phone"></i> (718) 555-2002</p>
+      </div>
+      <div class="borough-info" id="queens">
+        <h3>Astoria, Queens</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 789 Family Rd, Queens, NY 11103</p>
+        <p><i class="fas fa-phone"></i> (347) 555-3003</p>
+      </div>
+      <div class="borough-info" id="bronx">
+        <h3>Fordham, Bronx</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 321 Wellness Way, Bronx, NY 10458</p>
+        <p><i class="fas fa-phone"></i> (718) 555-4004</p>
+      </div>
+      <div class="borough-info" id="staten-island">
+        <h3>St. George, Staten Island</h3>
+        <p><i class="fas fa-map-marker-alt"></i> 654 Island St, Staten Island, NY 10301</p>
+        <p><i class="fas fa-phone"></i> (718) 555-5005</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Images Above Services -->
+  <section class="clinic-gallery">
+    <div class="container image-row">
+      <img src="https://images.pexels.com/photos/8460049/pexels-photo-8460049.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Doctor with child">
+      <img src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Nurse helping patient">
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2><i class="fas fa-heartbeat"></i> Our Services</h2>
+      <div class="services-flex">
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-baby"></i></div>
+          <h3>Pediatric Care</h3>
+          <p>Well-child visits, immunizations, and urgent care for children.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-user-md"></i></div>
+          <h3>Adult Medicine</h3>
+          <p>General wellness and chronic care for adults and caregivers.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+          <h3>Senior Health</h3>
+          <p>Comprehensive care for elderly family members.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Calendly Appointment Booking -->
+  <section id="book" class="booking">
+    <div class="container">
+      <h2><i class="fas fa-calendar"></i> Schedule an Appointment</h2>
+      <p>Select a time that fits your schedule.</p>
+      <div class="calendar-wrapper">
+        <iframe src="https://calendly.com/YOUR-CALENDLY-USERNAME" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guest Reviews -->
+  <section class="testimonials">
+    <div class="container">
+      <h2><i class="fas fa-comments"></i> What Families Are Saying</h2>
+      <div class="testimonial">
+        <p>"Family First Clinic truly cares. The doctors listened and made us feel safe and understood."</p>
+        <span>– Sarah T., Queens</span>
+      </div>
+      <div class="testimonial">
+        <p>"So convenient to book online! My toddler was treated with so much love."</p>
+        <span>– James R., Bronx</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Billing Section -->
+  <section id="billing" class="billing-section">
+    <div class="container">
+      <h2><i class="fas fa-file-invoice"></i> Billing & Invoices</h2>
+      <p>Call our billing team at (800) 555-6789 for invoice assistance or insurance questions.</p>
+    </div>
+  </section>
+
+  <!-- Footer with HIPAA Notice -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 FamilyCareClinicsNY.com — All Rights Reserved</p>
+      <p><strong>HIPAA Notice:</strong> We are fully compliant with federal privacy laws to protect your medical information.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Location Tabs
+    document.querySelectorAll('.borough-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.borough-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.borough-info').forEach(info => info.classList.remove('active'));
+
+        btn.classList.add('active');
+        const id = btn.getAttribute('data-borough');
+        document.getElementById(id).classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
